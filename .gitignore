@@ -1,0 +1,32 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+venv/
+
+# Build artifacts
+dist/
+build/
+
+# Large generated files — exclude from repo
+*.faiss
+models/
+logs/
+reviews.db
+
+# Data — keep benchmark + real CVE results, ignore fast-regeneratable outputs
+data/eval_results.json
+# real_eval_results.json is intentionally tracked — it's the resume evidence
+# (real CVE numbers, not auto-generated)
+
+# OS
+.DS_Store
+
+# Frontend
+node_modules/
+dashboard/dist/
